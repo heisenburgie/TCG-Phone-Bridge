@@ -1,0 +1,523 @@
+# Deutsche Texte für die ShopOS-Seiten im Phone-Overhaul-Tablet.
+# =Englisch|Deutsch    ganzer Text muss genau passen
+# ~Englisch|Deutsch    Textstück, wird überall im Text ersetzt (Leerzeichen zählen mit)
+# ^Regex|Ersatz        regulärer Ausdruck auf den ganzen Text ($1, $2 ... für Zahlen)
+# \s = Leerzeichen am Anfang/Ende eines Textstücks (sonst geht es verloren)
+# @Key|Name           Name der App auf dem Handy (Key wie in ShopOSApps)
+# Zeilen mit # werden ignoriert. Nach dem Ändern das Spiel neu starten.
+
+# ---------- App-Namen ----------
+@Music|Musik
+@Lights|Licht
+@Trades|Tausch
+@ModConfig|Mod-Einstellungen
+@CustomerReview|Ruf
+@RentBill|Miete
+@GameEvent|Events
+@PriceCheck|Preise
+@BuyDecoration|Deko
+@ExpandShop|Ausbau
+@Setting|ShopOS
+@Wallpaper|Hintergrund
+@PhotoGallery|Galerie
+@HostTournament|Turnier
+@Hiring|Personal
+@ScannerOrder|Scanner
+
+# ---------- Musik ----------
+=NOW PLAYING|LÄUFT GERADE
+=UP NEXT|ALS NÄCHSTES
+=SPEAKERS|LAUTSPRECHER
+=Nothing playing|Nichts läuft
+=Paste a YouTube link above to start the music|Füge oben einen YouTube-Link ein, um Musik zu starten
+=Paste a YouTube link or playlist|YouTube-Link oder Playlist einfügen
+=Open Music to paste a link|Öffne Musik, um einen Link einzufügen
+=Hang a speaker in the shop to hear the music.|Häng einen Lautsprecher im Shop auf, um die Musik zu hören.
+=PLAY|ABSPIELEN
+=ADD|HINZUFÜGEN
+=Nothing queued yet.|Noch nichts in der Warteschlange.
+~Nothing queued yet.|Noch nichts in der Warteschlange.
+~Paste a YouTube link or playlist above|Füge oben einen YouTube-Link oder eine Playlist ein
+^(\d+) IDLE$|$1 BEREIT
+^(\d+) LIVE$|$1 AKTIV
+^TRACK (\d+)(.*)$|TITEL $1$2
+~\stracks|\sTitel
+~\strack|\sTitel
+
+# ---------- Licht ----------
+=SHOP LIGHTS|SHOP-BELEUCHTUNG
+=LIGHTS ON|LICHT AN
+=LIGHTS OFF|LICHT AUS
+=Shop lights on|Shop-Licht an
+=Shop lights off|Shop-Licht aus
+=Click the lamp to switch the shop lights off.|Klick auf die Lampe, um das Shop-Licht auszuschalten.
+=Click the lamp to switch the shop lights on.|Klick auf die Lampe, um das Shop-Licht einzuschalten.
+=Click the lamp to switch the shop lights.|Klick auf die Lampe, um das Shop-Licht zu schalten.
+=LIGHT COLOURS|LICHTFARBEN
+=QUICK COLOURS|SCHNELLFARBEN
+=ALL ROOMS|ALLE RÄUME
+=RESET TO WHITE|AUF WEISS ZURÜCKSETZEN
+=SHOP A|SHOP A
+=SHOP B|SHOP B
+=SHOP C|SHOP C
+=Light colours come with QOL Overhaul.|Lichtfarben gibt es mit QOL Overhaul.
+=Install or enable it to colour each room. Switching the lights works without it.|Installiere oder aktiviere es, um jeden Raum zu färben. Licht schalten geht auch ohne.
+
+# ---------- Trades ----------
+=WAITING NOW|WARTET GERADE
+=No customer is waiting to trade|Kein Kunde wartet auf einen Tausch
+=No finished trade offers yet today|Heute noch keine abgeschlossenen Angebote
+=Card shown once you open the offer|Karte wird angezeigt, sobald du das Angebot öffnest
+=Trade offers are tracked by the host's game|Tauschangebote werden im Spiel des Hosts verfolgt
+=Trade offers live on the host's tablet in co-op|Im Koop liegen Tauschangebote auf dem Tablet des Hosts
+=Decline|Ablehnen
+=DECLINE|ABLEHNEN
+~\swaiting   ·\s\s\s|\swarten   ·\s\s\s
+~\soffers today   ·\s|\sAngebote heute   ·\s
+~\soffer today   ·\s|\sAngebot heute   ·\s
+~\soffers today|\sAngebote heute
+~\soffer today|\sAngebot heute
+~\sdeals   ·\s|\sDeals   ·\s
+~\sdeal   ·\s|\sDeal   ·\s
+~\s\s\s·   Net\s|\s\s\s·   Netto\s
+~\s\s\s·   Counter\s|\s\s\s·   Theke\s
+~\s\s\s·   asks\s|\s\s\s·   verlangt\s
+~\s\s\s·   wants\s|\s\s\s·   will\s
+~\s\s\s·   leaves in\s|\s\s\s·   geht in\s
+~Sale or trade   ·   Customer\s|Verkauf oder Tausch   ·   Kunde\s
+^Worth (.*)$|Wert $1
+^Bought for (.*)$|Gekauft für $1
+^Waiting (.*)$|Wartet $1
+=Bought|Gekauft
+=Sold|Verkauft
+=Traded|Getauscht
+=Declined|Abgelehnt
+=Left|Gegangen
+
+# ---------- Mod Config ----------
+=Search mods and settings|Mods und Einstellungen suchen
+=RESET ALL|ALLES ZURÜCKSETZEN
+=Changes save at once. Some mods only use a change after a restart.|Änderungen werden sofort gespeichert. Manche Mods übernehmen sie erst nach einem Neustart.
+=Pick a mod on the left|Wähle links eine Mod
+=No mod settings found|Keine Mod-Einstellungen gefunden
+=No mods match|Keine passenden Mods
+=No settings match the search|Keine Einstellung passt zur Suche
+=Press a key  ·  Esc cancels|Taste drücken  ·  Esc bricht ab
+~\ssettings|\sEinstellungen
+~\ssetting|\sEinstellung
+
+# ---------- Reputation / Reviews ----------
+=CUSTOMER REVIEWS|KUNDENBEWERTUNGEN
+=REVIEWS AT A GLANCE|BEWERTUNGEN IM ÜBERBLICK
+=AVERAGE RATING|DURCHSCHNITTSBEWERTUNG
+=Average stars|Durchschnittliche Sterne
+=REPUTATION TREND|RUF-VERLAUF
+=RATING TREND|BEWERTUNGSVERLAUF
+=STAR SPLIT|STERNE-VERTEILUNG
+=TOP COMPLAINTS|HÄUFIGSTE BESCHWERDEN
+=TOP PRAISE|HÄUFIGSTES LOB
+=WHAT YOUR REPUTATION DOES|WAS DEIN RUF BEWIRKT
+=ALL-TIME|GESAMT
+=All topics|Alle Themen
+=Newest first|Neueste zuerst
+=No complaints yet|Noch keine Beschwerden
+=No praise yet|Noch kein Lob
+=No reviews yet|Noch keine Bewertungen
+=No reviews yet. Customers leave reviews as they shop.|Noch keine Bewertungen. Kunden bewerten beim Einkaufen.
+=No reviews match this filter.|Keine Bewertung passt zu diesem Filter.
+=No new reviews today|Heute keine neuen Bewertungen
+=1 new review today|1 neue Bewertung heute
+=1 review|1 Bewertung
+=The trend shows up after the first day with reviews.|Der Verlauf erscheint nach dem ersten Tag mit Bewertungen.
+=Customers write about what they noticed in your shop. Fix the top complaints to lift your rating.|Kunden schreiben, was ihnen in deinem Shop aufgefallen ist. Behebe die häufigsten Beschwerden, um deine Bewertung zu verbessern.
+=Customers write about what they noticed in your shop. Fix the top complaints to lift your reputation.|Kunden schreiben, was ihnen in deinem Shop aufgefallen ist. Behebe die häufigsten Beschwerden, um deinen Ruf zu verbessern.
+=Reviews per day|Bewertungen pro Tag
+=visitors per day|Besucher pro Tag
+=cash per customer|Geld pro Kunde
+=items per visit|Artikel pro Besuch
+=walk out early|gehen früher
+=Card prices|Kartenpreise
+=Pack opening|Packs öffnen
+=Play tables|Spieltische
+=Single cards|Einzelkarten
+=Card trading|Kartentausch
+=Empty shelves|Leere Regale
+=Boxes on the floor|Kartons auf dem Boden
+=Bulk box|Bulk-Box
+=Based on the latest review|Basierend auf der letzten Bewertung
+~Based on the latest\s|Basierend auf den letzten\s
+~\snew reviews today|\sneue Bewertungen heute
+~\sreviews|\sBewertungen
+~Newest first, showing\s|Neueste zuerst, zeigt\s
+~Holds steady at\s|Bleibt stabil bei\s
+~\sstars: better reviews push it up, worse pull it down|\sSternen: bessere Bewertungen heben ihn, schlechtere senken ihn
+~\sstars|\sSterne
+~Buy more +|Kaufen mehr +
+~Leave early\s|Gehen früher\s
+^TODAY (.*)$|HEUTE $1
+
+# Kundenzitate
+=A few boxes lying around the floor. Bit messy.|Ein paar Kartons liegen rum. Etwas unordentlich.
+=A few shelves were bare, had to hunt around.|Ein paar Regale waren leer, musste suchen.
+=All tables are full...|Alle Tische sind voll...
+=Always a table free, great place to play.|Immer ein Tisch frei, super Ort zum Spielen.
+=Anyone looking at my cards?|Schaut sich jemand meine Karten an?
+=Best place in town to trade cards.|Bester Ort der Stadt zum Kartentauschen.
+=Brought my deck for nothing. No seats.|Deck umsonst mitgebracht. Keine Plätze.
+=Came to play and every table was taken.|Wollte spielen, aber jeder Tisch war besetzt.
+=Checkout took longer than I hoped.|Das Bezahlen hat länger gedauert als gehofft.
+=Come on, come on...|Na los, na los...
+=Couldn't find everything, some spots were empty.|Hab nicht alles gefunden, einige Plätze waren leer.
+=Empty again?|Schon wieder leer?
+=Empty shelves everywhere. Restock please!|Überall leere Regale. Bitte auffüllen!
+=Everything was right where it should be.|Alles war genau da, wo es sein sollte.
+=Fastest checkout in town!|Schnellste Kasse der Stadt!
+=Great stuff, but the checkout line is a boss fight.|Tolle Sachen, aber die Kassenschlange ist ein Bosskampf.
+=Guess I can't play today.|Dann kann ich heute wohl nicht spielen.
+=Had to climb over delivery boxes to reach the shelves.|Musste über Lieferkartons klettern, um an die Regale zu kommen.
+=Had to wait a bit at the register, but it was fine.|Musste kurz an der Kasse warten, war aber okay.
+=Had to wait for a table to free up.|Musste warten, bis ein Tisch frei wurde.
+=Had to wait quite a bit at the trade counter.|Musste ziemlich lange an der Tauschtheke warten.
+=Half the shelves were empty. Felt like a closing sale.|Die Hälfte der Regale war leer. Wie ein Räumungsverkauf.
+=Hello? I want to trade!|Hallo? Ich will tauschen!
+=I aged a full year waiting at the counter.|Bin an der Theke ein Jahr älter geworden.
+=In and out in a minute. Love it.|In einer Minute rein und raus. Super.
+=Is anyone working the register?|Arbeitet hier jemand an der Kasse?
+=Is this a card shop or a warehouse? Boxes everywhere.|Ist das ein Kartenladen oder ein Lager? Überall Kartons.
+=I've been waiting forever!|Ich warte schon ewig!
+=Line was slow today. Nice shop otherwise.|Die Schlange war heute langsam. Sonst ein schöner Laden.
+=Messy in here...|Ganz schön unordentlich hier...
+=Nearly broke my ankle on a cardboard box.|Hätte mir fast den Knöchel an einem Karton gebrochen.
+=Neat and tidy, easy to walk around.|Sauber und ordentlich, man kommt gut durch.
+=Never seen shelves this full.|So volle Regale hab ich noch nie gesehen.
+=Nice play area, will come back for games.|Schöner Spielbereich, ich komme zum Spielen wieder.
+=No free tables?|Keine freien Tische?
+=No table free, so I just went home.|Kein Tisch frei, also bin ich heimgegangen.
+=Nothing here...|Hier ist nichts...
+=One register, ten people, zero staff. Never again.|Eine Kasse, zehn Leute, null Personal. Nie wieder.
+=Owner looked at my trade right away. Great service!|Der Besitzer hat sich meinen Tausch sofort angesehen. Toller Service!
+=Paid before I even finished my sentence. Smooth.|Bezahlt, bevor ich den Satz zu Ende hatte. Klasse.
+=Quick and friendly card trade.|Schneller, freundlicher Kartentausch.
+=Saw some boxes in the way, nothing terrible.|Ein paar Kartons im Weg, nichts Schlimmes.
+=Shelves could use a refill.|Die Regale könnten Nachschub vertragen.
+=Shelves stocked to the brim!|Regale bis oben voll!
+=Spotless floor, really clean shop.|Blitzblanker Boden, richtig sauberer Laden.
+=Still waiting to trade...|Warte immer noch auf den Tausch...
+=Stood at the counter with my cards forever. No one cared.|Stand ewig mit meinen Karten an der Theke. Keinen hat's interessiert.
+=Stood in line so long my booster packs went out of print.|Stand so lange an, dass meine Booster nicht mehr gedruckt werden.
+=Tables were busy, got a seat in the end.|Tische waren voll, hab am Ende doch einen Platz bekommen.
+=This line is not moving...|Diese Schlange bewegt sich nicht...
+=Tidy up those boxes and this place is great.|Räum die Kartons weg und der Laden ist super.
+=Trading here takes some patience.|Tauschen braucht hier etwas Geduld.
+=Waited ages to trade my cards and nobody came.|Ewig zum Tauschen gewartet und keiner kam.
+=Waiting to trade took a while today.|Das Warten aufs Tauschen hat heute gedauert.
+=Walked from shelf to shelf and found nothing.|Bin von Regal zu Regal gelaufen und hab nichts gefunden.
+=Wanted to trade, got ignored. Taking my binder elsewhere.|Wollte tauschen, wurde ignoriert. Mein Binder geht woanders hin.
+=Where did everything go?|Wo ist denn alles hin?
+=Who left these boxes here?|Wer hat die Kartons hier stehen lassen?
+=Whoa, watch the boxes!|Hoppla, Vorsicht, Kartons!
+=Zero waiting at the register, what a treat.|Null Wartezeit an der Kasse, herrlich.
+
+# ---------- Miete ----------
+=RENT|MIETE
+=ELECTRICITY|STROM
+=SALARY|GEHALT
+=TODAY|HEUTE
+=Rent & Bills|Miete & Rechnungen
+=Shop and warehouse space|Shop- und Lagerfläche
+=Lights and cash counters|Licht und Kassen
+=Wages for hired staff|Löhne für Angestellte
+=AMOUNT DUE|FÄLLIGER BETRAG
+=BREAKDOWN|AUFSCHLÜSSELUNG
+=IF LEFT UNPAID|WENN UNBEZAHLT
+=Base shop|Grundladen
+=Warehouse|Lager
+=Locked|Gesperrt
+=Rent per day|Miete pro Tag
+=Next expansion|Nächste Erweiterung
+=Lights on today|Licht heute an
+=Shop lighting|Shop-Beleuchtung
+=Added next morning|Kommt morgen früh dazu
+=Nothing owed|Nichts offen
+=A new charge is added every morning|Jeden Morgen kommt eine neue Gebühr dazu
+=No staff hired|Kein Personal eingestellt
+=Hired staff|Angestellte
+=Salary per day|Gehalt pro Tag
+=Per day (staff mod)|Pro Tag (Personal-Mod)
+=CASH NOW|GELD JETZT
+=TOTAL DUE|GESAMT FÄLLIG
+=CASH AFTER PAYING ALL|GELD NACH ALLEN ZAHLUNGEN
+=PAY ALL|ALLES BEZAHLEN
+=PAID|BEZAHLT
+=PAID, LAST 7 DAYS|BEZAHLT, LETZTE 7 TAGE
+=PAID ALL TIME|BEZAHLT INSGESAMT
+=Total|Gesamt
+=Today|Heute
+=Rent|Miete
+=Power|Strom
+=Salary|Gehalt
+=No finished days yet|Noch keine abgeschlossenen Tage
+=DUE TODAY|HEUTE FÄLLIG
+=DUE IN 1 DAY|FÄLLIG IN 1 TAG
+=LATE 1 DAY|1 TAG ÜBERFÄLLIG
+=Due soon, the phone shows a bill alert|Bald fällig, das Handy zeigt eine Rechnungswarnung
+=Paid automatically tomorrow morning|Wird morgen früh automatisch bezahlt
+^DUE IN (\d+) DAYS$|FÄLLIG IN $1 TAGEN
+^LATE (\d+) DAYS$|$1 TAGE ÜBERFÄLLIG
+^Day (\d+) of (\d+)$|Tag $1 von $2
+^Due Day (\d+)$|Fällig Tag $1
+^Was due Day (\d+)$|War fällig Tag $1
+^Paid automatically on Day (\d+)$|Automatisch bezahlt an Tag $1
+^Day (\d+)$|Tag $1
+^(\d+) days left to pay on time$|Noch $1 Tage zum pünktlichen Zahlen
+^1 day left to pay on time$|Noch 1 Tag zum pünktlichen Zahlen
+^Late after (\d+) days\. Once more than (\d+) days late the game pays it by itself the next morning\. No late fee\.$|Überfällig nach $1 Tagen. Ist sie mehr als $2 Tage überfällig, zahlt das Spiel sie am nächsten Morgen selbst. Keine Mahngebühr.
+^PAY (.+)$|$1 BEZAHLEN
+^Short by (.+)$|Es fehlen $1
+~Expansions (|Erweiterungen (
+~Counters (|Kassen (
+~Floor area (|Fläche (
+~\srooms)|\sRäume)
+~Warehouse rooms (|Lagerräume (
+~\sunpaid|\sunbezahlt
+
+# ---------- Events ----------
+=EVENT FEE|EVENT-GEBÜHR
+=YOUR FEE|DEINE GEBÜHR
+=HOST COST|KOSTEN
+=CUSTOMER EFFECT|WIRKUNG AUF KUNDEN
+=SELECTED EVENT|GEWÄHLTES EVENT
+=New fee|Neue Gebühr
+=Set fee|Gebühr setzen
+=Reset changes|Änderungen zurücksetzen
+=Running now|Läuft gerade
+=Starts tomorrow|Startet morgen
+=Host from tomorrow|Ab morgen veranstalten
+=Unlocked from the start|Von Anfang an freigeschaltet
+=Every customer will play at this fee|Bei dieser Gebühr spielt jeder Kunde
+=Too expensive, no customer will play|Zu teuer, kein Kunde wird spielen
+~% of customers will play, the rest refuse|% der Kunden spielen, der Rest lehnt ab
+~Running today:\s|Läuft heute:\s
+~\s\s\s\sTomorrow:\s|\s\s\s\sMorgen:\s
+~Today:\s|Heute:\s
+~Unlocked at\s|Freigeschaltet ab\s
+~All play up to\s|Alle spielen bis\s
+~\s\s\s·   half refuse from\s|\s\s\s·   die Hälfte lehnt ab bei\s
+~\s\s\s·   none from\s|\s\s\s·   keiner spielt bei\s
+~\sgames played|\sSpiele gespielt
+~\sgames|\sSpiele
+~Played\s|Gespielt\s
+~Market\s|Markt\s
+~Yours\s|Deins\s
+
+# ---------- Preise ----------
+=Card Packs|Kartenpacks
+=Accessories|Zubehör
+=Figurines|Figuren
+=All Items|Alle Artikel
+=Board Games|Brettspiele
+=Cards|Karten
+=Search|Suchen
+=Sort: Default|Sortierung: Standard
+=CARD PACKS|KARTENPACKS
+=ACCESSORIES|ZUBEHÖR
+=FIGURINES|FIGUREN
+=ALL ITEMS|ALLE ARTIKEL
+=BOARD GAMES|BRETTSPIELE
+=CARDS|KARTEN
+=ITEM|ARTIKEL
+=MARKET|MARKT
+=CHANGE|ÄNDERUNG
+=YOUR PRICE|DEIN PREIS
+=MARKET PRICE|MARKTPREIS
+=PRICE HISTORY|PREISVERLAUF
+=GRADED MARKET|MARKT (GEGRADET)
+=MODDED SETS|MOD-SETS
+=Select an item to see its price history|Wähle einen Artikel, um seinen Preisverlauf zu sehen
+=Not enough history yet|Noch nicht genug Verlauf
+=Nothing to show here yet|Hier gibt es noch nichts
+=Average cost|Durchschnittliche Kosten
+=Profit per sale|Gewinn pro Verkauf
+=Versus market|Im Vergleich zum Markt
+=Your price|Dein Preis
+=Not owned|Nicht im Besitz
+=Not set|Nicht gesetzt
+=Price high|Preis hoch
+=Price low|Preis niedrig
+=Modded set|Mod-Set
+~\s\sno history yet|\s\snoch kein Verlauf
+~\s\ssince yesterday|\s\sseit gestern
+~Sort:\s|Sortierung:\s
+~Cost\s|Kosten\s
+~\sitems|\sArtikel
+^Set:(.*)$|Set:$1
+^High (.*)$|Hoch $1
+^Low (.*)$|Tief $1
+
+# ---------- Deko ----------
+=Search all decorations|Alle Dekorationen durchsuchen
+=Pick a decoration|Wähle eine Dekoration
+=Nothing for sale here|Hier gibt es nichts zu kaufen
+=CLASSIC SHOP|KLASSISCHER SHOP
+=IN USE|IN BENUTZUNG
+=In use in your shop|In deinem Shop in Benutzung
+=Goes to your decoration inventory|Kommt in dein Deko-Inventar
+=Equip it from Place Decoration|Über „Deko platzieren“ aufstellen
+=Unlocks it for Place Decoration|Schaltet es für „Deko platzieren“ frei
+~\sOWNED|\sIM BESITZ
+~\sITEMS|\sARTIKEL
+~\sITEM|\sARTIKEL
+^Buy (.*)$|Kaufen $1
+^Owned (.*)$|Besitz $1
+
+# ---------- Ausbau ----------
+=CASH|GELD
+=INVESTED|INVESTIERT
+=LEFT TO BUY|NOCH ZU KAUFEN
+=PURCHASES|KÄUFE
+=Owned|Gekauft
+=Next purchase|Nächster Kauf
+=NEXT PURCHASE|NÄCHSTER KAUF
+=All bought|Alles gekauft
+=Every room is open|Alle Räume sind offen
+=Open and in use|Offen und in Benutzung
+=Not available right now|Gerade nicht verfügbar
+=Not available yet|Noch nicht verfügbar
+=Purchase failed|Kauf fehlgeschlagen
+=Unlock the warehouse|Lager freischalten
+=Opens the warehouse|Öffnet das Lager
+=Opens the basement|Öffnet den Keller
+=Opens the 1st floor|Öffnet den 1. Stock
+=Opens the 2nd floor|Öffnet den 2. Stock
+=Opens Shop Lot C|Öffnet Grundstück C
+=Shop floor|Verkaufsfläche
+=1st floor|1. Stock
+=2nd floor|2. Stock
+=Below Shop A|Unter Shop A
+=Third shop lot|Drittes Grundstück
+=Waiting for the mod|Warte auf die Mod
+~Needs shop level\s|Braucht Shop-Level\s
+~Adds room\s|Fügt Raum hinzu\s
+~LEVEL\s|LEVEL\s
+~\sROOMS|\sRÄUME
+^Need (.*)$|Benötigt $1
+
+# ---------- ShopOS-Einstellungen ----------
+=HOME SCREEN|STARTBILDSCHIRM
+=APPS ON THE HOME SCREEN|APPS AUF DEM STARTBILDSCHIRM
+=SHOP FEATURES|SHOP-FUNKTIONEN
+=CLASSIC SCREENS|KLASSISCHE BILDSCHIRME
+=USE THE GAME'S OWN SCREEN|SPIELEIGENEN BILDSCHIRM NUTZEN
+=FRAME COLOUR|RAHMENFARBE
+=Animated background|Animierter Hintergrund
+=Slow colour drift on the ShopOS background|Langsamer Farbverlauf im ShopOS-Hintergrund
+=Bad review alerts|Warnung bei schlechten Bewertungen
+=Short alert on 1 and 2 star reviews|Kurze Meldung bei 1- und 2-Sterne-Bewertungen
+=Cash counter fix|Kassen-Fix
+=No stray clicks on the change tray|Keine Fehlklicks auf die Wechselgeldschale
+=Customer comments|Kundenkommentare
+=Customers say what bothers them|Kunden sagen, was sie stört
+=Next day countdown|Countdown zum nächsten Tag
+=Backspace cancels an Enter after closing|Rücktaste bricht ein Enter nach Ladenschluss ab
+=Seconds before the day report|Sekunden bis zum Tagesbericht
+=Reviews Overhaul|Bewertungs-Overhaul
+=Reputation changes customers and spending|Ruf beeinflusst Kunden und Ausgaben
+=Reputation strength|Stärke des Rufs
+=How strongly reviews move customers|Wie stark Bewertungen die Kunden beeinflussen
+=Trade alerts|Tausch-Hinweise
+=Card and value when a customer wants to trade|Karte und Wert, wenn ein Kunde tauschen will
+=Trade alert minimum|Mindestwert für Tausch-Hinweise
+=Only alert for cards worth at least this|Nur bei Karten mit mindestens diesem Wert melden
+=Shop info card|Shop-Infokarte
+=Clock, day, shop name and money|Uhr, Tag, Shopname und Geld
+=Now Playing card|„Läuft gerade“-Karte
+=Music card next to the apps|Musikkarte neben den Apps
+=Lights card|Lichtkarte
+=Light switch and colours next to the apps|Lichtschalter und Farben neben den Apps
+=Icon size|Icongröße
+=Size of the app icons|Größe der App-Icons
+=Tablet size|Tabletgröße
+=Share of the screen height|Anteil an der Bildschirmhöhe
+=Tablet frame|Tablet-Rahmen
+=Dims the tablet screen|Dimmt den Tablet-Bildschirm
+=Brightness|Helligkeit
+=Tap sounds|Tippgeräusche
+=Taps, open and close|Tippen, Öffnen und Schließen
+=Reset home screen|Startbildschirm zurücksetzen
+=Default order, folders removed|Standardreihenfolge, Ordner werden entfernt
+=Pictures from your wallpaper folder|Bilder aus deinem Hintergrund-Ordner
+=Host decides|Host entscheidet
+
+# ---------- Allgemein ----------
+=Home|Start
+=CLOSE TABLET|TABLET SCHLIESSEN
+=Loading...|Lädt...
+
+# ---------- Nachträge ----------
+=ROOM|RAUM
+=BRIGHTNESS|HELLIGKEIT
+=UPSTAIRS|OBERGESCHOSS
+=BASEMENT|KELLER
+=Warm|Warm
+=Daylight|Tageslicht
+=Cool|Kühl
+=Gold|Gold
+=Cyan|Cyan
+=Violet|Violett
+=Rose|Rosa
+=Red|Rot
+=Walls|Wände
+=Floors|Böden
+=Ceilings|Decken
+=Posters|Poster
+=Decor|Deko
+=SELECTED|AUSGEWÄHLT
+=WALL|WAND
+=FLOOR|BODEN
+=CEILING|DECKE
+=POSTER|POSTER
+=DECOR|DEKO
+=PRICE|PREIS
+=BALANCE|KONTOSTAND
+~Net +|Netto +
+~Net -|Netto -
+~Net €|Netto €
+^(\d+) days$|$1 Tage
+^1 day$|1 Tag=Only for the ShopOS tablet|Nur fürs ShopOS-Tablet
+
+# ---------- Ruf (Nachtrag) ----------
+^Holds steady at ([\d.,]+) stars: better reviews push it up, worse pull it down$|Ruf bleibt gleich bei Bewertungen von Ø $1 Sternen – bessere heben ihn, schlechtere senken ihn
+^hold ([\d.,]+) stars$|Ø $1 Sterne = Ruf bleibt gleich
+=REPUTATION|RUF
+=Score|Ruf
+=Hold|Bleibt gleich
+=Prices|Preise
+=Overall|Allgemein
+=Checkout|Kasse
+=Selection|Auswahl
+=Smell|Geruch
+=Lighting|Beleuchtung
+=Change|Wechselgeld
+=Entrance|Eingang
+=Tournaments|Turniere
+
+# ---------- Ordnernamen (Ordner-Vorlage) ----------
+%Stock|Einkauf
+%Shop|Laden
+%Business|Geschäft
+%Management|Management
+%Events|Events
+%Tools|Werkzeuge
+%Duplicates|Duplikate
+
+# ---------- Events (Nachtrag) ----------
+=AVAILABLE|VERFÜGBAR
+=RUNNING|LÄUFT
+=PLANNED|GEPLANT
+=LOCKED|GESPERRT
+~/day|/Tag
+~/hr|/Std
+^for (.+)$|für $1
+=Standard|Standard
+=Casual|Locker
+=Opening the game's own screen...|Öffne den Bildschirm des Spiels...

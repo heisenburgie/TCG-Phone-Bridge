@@ -1,0 +1,11 @@
+1.0.0 - first public release
+  - ShopOS pages as Phone Overhaul apps: Music, Lights, Trades, Mod Config, Reputation,
+    Rent, Events, Price Check, Decoration, Expansion, ShopOS settings (configurable).
+  - ShopOS as a device for Phone Overhaul ("Phone Key Opens = OtherTablet"),
+    "Phone Overhaul" app on the ShopOS tablet to open the phone.
+  - ShopOS settings applied on the phone (brightness, app visibility, classic screens);
+    read only.
+  - Folder preset for the Phone Overhaul home screen: applied once on the first start
+    (with backup), your own changes are kept; can be applied again via the config.
+  - Fixes inside the phone: clipped ShopOS lists, colour tags on the review screen.
+  - Optional German translation (separate download).

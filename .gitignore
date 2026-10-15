@@ -1,0 +1,6 @@
+# build output and release zips (built by build.ps1 / package.ps1)
+dist/
+release/
+# personal notes, not part of the mod
+Nexus-Upload (nicht Teil der Mod)/
+CLAUDE.md
