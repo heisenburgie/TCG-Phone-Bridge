@@ -3,7 +3,7 @@
 <img src="assets/tablet_icon.png" width="96" align="right" alt="">
 
 A BepInEx 5 mod for **TCG Card Shop Simulator** that lets
-**QOL ShopOS** by Evers665 and
+[QOL ShopOS](https://www.nexusmods.com/tcgcardshopsimulator/mods/1754) by Evers665 and
 [Phone - Overhaul](https://www.nexusmods.com/tcgcardshopsimulator/mods/685) by Munchmatoast work together.
 
 > **Unofficial bridge.** It is not made or supported by the ShopOS or Phone Overhaul authors.
